@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Notes as of Work Session 2</title>
+
+</head>
+
+<body>
+  
+  <h1>Introduction to Programming</h1>
+    
+    <div class="lesson">
+      
+      <h2>Session 1</h2>
+        
+        <div class="concept">		
+        
+          <h3>Introduction</h3>
+        
+            <p>
+              The "web" is made up of several parts. People use their browsers to view web pages. These pages are stored on other computers called servers that "serve" information to client computers through the internet using the http protocol. This information can take many forms, but the most common are HTML documents. HTML is a language used to format the data displayed on webpages. 
+            </p>
+        
+        </div>
+        
+        <div class="concept">
+          
+          <h3>Working with HTML</h3>
+            
+            <p>
+              HTML functions by using tags to add special properties to the text we write. Tags can make text bold, create spacing, and even embed videos, pictures, and links to other web sites on our page.<em> *Note: Computers will not forgive errors in syntax*</em>
+    
+            </p>
+    
+        </div>
+    
+        <div class="concept">
+    
+          <h3>Basic tags</h3>
+    
+            <p>
+              &lt;b&gt; bold<br>
+              &lt;em&gt; italics<br>
+              &lt;br&gt; line break<br>
+              &lt;p&gt; paragraph<br>
+            </p>
+    
+            <p>
+              Some tags like anchor   include attributes that modify the function performed.
+              Some tags like break are void tags and do not require a closing tag.
+              Some tags like paragraph create a block around their content grouping it and seperating from other text. 
+            </p>
+    
+        </div>
+    
+    </div>
+
+    <div class="lesson">
+      
+      <h2>Session 2</h2>
+        
+        <div class="concept">
+          
+          <h3> HTML Structure</h3>
+    
+            <p>
+    
+              <u>Tree Like:</u> HTML has a branching structure where elements contain other elements. This is called nesting.<br>
+            </p>
+    
+            <p>   
+              <u>HTML:</u> Hyper Text Markup Language provides the structure of a document.<br>
+            </p>
+    
+            <p>
+              <u>CSS:</u> Cascading Style Sheets provides the style of the document.<br>
+            </p>
+    
+            <p>
+              <u>DOM:</u> Document Object Model is the convention for representing and interacting with objects in html.<br>
+            </p>
+    
+            <p>
+              <u>Boxes:</u> Websites can be broken down into boxes to group things together and allow for easier editing or rearranging<br>
+            </p>         
+    
+        </div>
+                    
+    </div>
+    
+    <div class="lesson">
+    
+      <h2>Session 3</h2>
+    
+        <div class="concept">
+
+          <h3>CSS Usage</h3>
+
+            <p>
+              CSS takes our HTML code to another level. With CSS we add style on top of the structure provided by our HTML. Create a seperate file .css, and link to that in the
+              head of the HTML document. CSS works similarly to writing HTML. It consists of selectors that choose the element to apply style to and rules between {}.Rules consist of attributes like background-color, and values which in this case would be the color we wanted to use stated: background-color: blue;. Selectors can specify targets by element type (like paragraphs or divs), or by classes. In the Html file we can declare class names for different elements to plan out how to apply styles.The C is CSS stands for Cascading, this refers to the inheritance structure of CSS. This means that styles applied to an element will be inherited by nested elements within. We can create additional more specific classes, for instance if we had three paragraphs, and wanted one to be a different style than the others. 
+            </p>
+    
+        </div>
+
+        <div class="concept">
+    
+          <h3>Final Stage One Thoughts</h3>
+
+            <p>
+              Armed with some basic knowledge of html and css, the first draft of our website is under construction. Important things here: use correct syntax, indent to show nested elements, and avoid uneccessary repetition. Repetition leads to mistakes, makes it harder to change things later on, and makes it harder for others to understand your code.
+            </p>
+    
+        </div>
+
+    </div> 
+    
+    <div class="lesson">
+       
+       <h2> Session 4</h2>
+        
+         <div class= "concept">
+        
+           <h3>Computer Programming</h3>
+        
+             <p>
+               In simplest terms a computer is any device that can perform computations. A program is a series of instructions to make a computer do something, or solve a problem. 
+               To do this we need to use computer languages like Python to communicate with the computer. The last piece of the puzzle is the interpreter, which takes our commands and translates them for the computer at a basic level.     
+             </p>   
+        
+         </div>
+        
+         <div class="concept">
+           
+           <h3>Grammar</h3>
+             
+             <p>
+               Grammar is the convention we use to structure our use of a language. To describe the grammar of Python we were introduced to Backus-Naur Form. In this method we break down the structure of sentences, best described in this picture.
+             </p>
+        
+        <img src= "backus.jpg" alt= "Backus Naur Form">
+             
+             <p>
+               This leads us to the basic grammar for aritmetic expressions in Python, shown here
+             </p>
+
+        <img src= "arithmetic.jpg" alt= "Arithmetic Expression">
+         
+         </div>      
+    
+    </div>
+    
+    <div class="lesson">
+      
+      <h2>Session 5</h2>
+        
+        <div class="concept">
+          
+          <h3>More Python</h3>
+            <p>  
+              This session introduced some more hardcore programming concepts, mainly variables and strings. Variables allow us to save some data for use. Strings give us a way to work with data other than numbers. 
+            </P>
+
+          </div>
+
+        <div class="concept">
+          
+          <h3>Variables</h3>
+        
+            <p>
+              A variable is a place to assign a value and save it to memory. We assign a value to a variable by writing a line of code naming the variable and assigning a value "example=1". Now whenever we call example in later code, the interpreter is going to know to use the integer 1. In programming we often use an equal sign to assign a value, in HTML this was done for naming classes. 
+            </p>
+        
+        </div>
+
+        <div class="concept">
+        
+          <h3>Strings</h3>
+           
+            <p>
+              A string is simply a sequence of characters. By using quotes we can work with non-numerical data. If we enter 2+2 in python we get 4. If we enter "2"+"2" we get 22. This is because designating the 2 a string using quotation marks tells the interpreter to treat the 2 as a character, and not an integer to perform arithmetic on
+            </p>
+        
+        </div>
+
+    </div>
+
+    <div class="lesson">
+      
+      <h2>Session 6</h2>
+        
+        <div class= "concept">
+          
+          <h3>Functions</h3>
+           
+            <p>
+              The way to make more powerful code is to use functions. Functions or procedures are elements which take some form of input and do something with that data. The find command used earlier is an example of a built in function in Python.
+            </p>
+
+        </div>
+        
+        <div class="concept">
+        
+          <h3>Procedure Syntax</h3>
+            
+
+            The following is the proper syntax for  using procedures:
+            <br><br>
+            <em>&lt;procedure&gt; (input,input2,...)</em>
+            <br><br>   
+            To create a new procedure we enter this:
+            <br><br>
+            <em>def &lt;procedure_name&gt; (input, input2,...):<br>
+            Code to be run on input</em>
+        
+        </div>
+
+    </div>
+
+    <div class="lesson">
+      
+      <h2>Session 7</h2>
+        
+        <div class="concept">
+        
+          <h3>Equality Comparisons</h3>
+        
+            <p>
+              We can use code to make different decisions based on the value of data. To do this we use comparisons. Less than, greater than, "==" which is  equal, and "!=" or not equal all evaluate to a Boolean True or False. Using this we can make our code branch out depending on the data.
+            </p>
+        
+        </div>
+        
+        <div class="concept">   
+         
+          <h3>If and Else</h3>
+            
+            If statements are what we use to make these branching decisions in our code. The syntax is:<br>
+            <br>
+            <em>If (test expression(such as x == 1)):<br>
+            Block of code</em>
+
+            <p>
+              Our program will run, then it will evaluate the if statement(running the block of code if it meets the test conditions) and then move on to the next instructions. We can use an Else statement, which follows the same syntax as If, to run another block of code when data does not meet the test conditions.
+            </p>
+
+        </div>
+
+        <div class="concept">
+
+          <h3>While loops</h3>
+
+            <p>
+              Using While we can execute a conditional block of code an unlimited amount of times as long as the test condition remains true. While uses the same syntax as the other conditional statements. We can use break, to stop the while loop, by using another condition. That looks like this
+            </p>
+            <em>
+            while (test expression):<br>
+            Block of code <br>
+            if (test expression):<br>
+            Break</em>
+
+        </div>
+
+    </div> 
+
+    <div class="lesson">
+
+      <h2>Session 8</h2>
+
+        <div class="concept">
+
+          <h3>Lists</h3>
+ 
+            <P>
+              Lists are a type of structure data similar to, but different from, strings. Strings are a sequence of characters but lists can contain anything; strings, numbers, even other lists. We use lists like this.
+            </p>
+            <em>p= [list item, another one, and another one]</em>
+ 
+        </div>
+ 
+        <div class= "concept">
+ 
+          <h3>Working with Lists</h3>
+ 
+            <p>
+              Lists unlike strings can be changed. This is called mutation. When we changed strings, we actually created a new string formed of the old string plus the changes. With mutations we can modify the original list itself.
+            </p>
+ 
+        </div>
+ 
+        <div class="concept">
+
+          <h3>List Operators</h3>
+ 
+            <p>
+              There are multiple functions we can use to work with lists. Append allows us to tack elements onto the end of a list. Plus concatenates two lists which, unlike append, creates a new list rather than mutating the original lists. Len or length counts the number of elements in a list.
+            </p>
+ 
+        </div>
+ 
+        <div class="concept">
+ 
+          <h3>For Loops</h3>
+            
+            We can use for loops to run a function on every element in a list, regardless of how long the list is. This is how  we use For:
+            <br><br>
+            <em>for (name) in (list):<br>
+            Block of Code</em>
+       
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
