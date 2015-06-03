@@ -318,6 +318,190 @@
     
     </div>
 
+    <div class="lesson">
+
+      <h2>Session 9</h2>
+        
+        <div class="concept">
+          
+          <h3> Python Modules</h3>
+            
+            <p>
+              Turns out there are even more tools within Python that we can use to make more
+              powerful code. One example is <em>"webbrowser.open"</em>. This allows us to write code
+              that can open webpages. In the lesson this is implemented in a "Take a breaK" 
+              program where we wrote a program that plays a video to remind us to take a break
+              when we are working on the computer. To use this function we need to add a line
+              <em>"import webbrowser"</em> in our code. This tells Python we want to use webbrowser and its
+              functionality in our program. By using the function <em>"time.sleep()"</em> we can cause the program 
+              to wait a period of time before executing the rest of the code. This was used
+              to set break intervals for our video playing program. Time and Webbrowser are 
+              modules within the standard Python library. By using these built in functions 
+              we are taking advantage of abstraction. We are removed from having to do the tedious work 
+              of figuring out how to perform these tasks from scratch and can use preexisting modules 
+              to build our own programs on. oslist.
+            </p>
+        
+        </div> 
+    
+    </div>
+    
+    <div class="lesson">
+      
+      <h2>Session 10</h2>
+        
+        <div class="concept">
+          
+          <h3>Introducing Classes</h3>
+            
+            <p>
+              We were introduced to the concept of classes by using the turtle module
+              to draw shapes. We named our turtle Brad, and created him by calling <em>"turtle.Turtle()"</em>.
+              Brad is an instance, or a specific unique object, of the class Turtle. The difference between
+              using a class like Turtle and calling a function like <em>"os.list"</em> is that
+              when we uses classes it runs an initialization(init) function that creates space in memory for 
+              the instance we are creating. So when we made Brad the Turtle, space was created for the specific 
+              instance or object named Brad, which has access to all the functions of the Turtle class.
+              The relationship between classes and objects was described as being similar to blueprints and the 
+              specific buildings that follow that blueprint. The point being that classes provide a structure, and 
+              objects are unique implementations of that structure. So while Turtle class objects draw shapes, specific 
+              Turtle instances may draw different shapes or use different colors. This is somewhat similar to the use 
+              of classes in CSS. I use a class called "lesson" which dictates the format that each of these sessions follow.
+              However each individual session contains different content. Each note session represents an instance of the class lesson, while built using the same guidelines they are still unique.
+            </p>
+        
+        </div>
+
+        <div class="concept">
+
+          <h3> More Classes </h3>
+
+            <p>
+              We went on to use code from Twilio in order to write a program that sends text messages.
+              This exemplifies the benefits of abstraction. Twilio is a complex piece of code that
+              interfaces between different networks. Someone just learning to program would have 
+              no clue how to make their code do what Twilio does. But we are able to use this premade code in
+              order to accomplish our goal by just reading the documentation and plugging in the specifics for our purposes.
+            </p>
+
+            <p>
+              In using Twilio we learned a new Python word, "From". When we used functions from the python library we wrote a line <em>"import module_name"</em>. 
+              When using Twilio we wrote <em>"from twilio.rest import TwilioRestClient"</em>. Looking on Google we found that a "from" statement means from a module import these specific attirbutes.
+              So "from" twilio.rest, we want to use TwilioRestClient in our code. 
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="lesson">
+      
+      <h2>Session 11</h2>
+        
+        <div class="concept">
+          
+          <h3>Making Classes</h3>
+           
+           <p>
+              We started this lesson by beginning to define a class to make a compendium of movies.
+              This quickly led to a trip to the Google style guide for Python, a series of conventions
+              that professional and courteous programmers should use that will make code more readable.
+              We learn here that class names are in Uppercase.
+            </P>
+           
+            <p>
+              To make this work we use two python files. One file contains the class definition, and the other
+              is where we create the instances of the class. In this example our class "Movie" is in a file called media.py, while 
+              the individual movies are in entertainment_center.py.
+            </p>
+            
+            <p>
+
+              The next step is to define init. In earlier lessons we learned that when we use classes an initialization
+              process begins establishing memory space for an instance of our class. This was the fundamental difference
+              between using Turtle and using webbrowser. Init is a constructor which essentially initialzes all the data for a particular instance and
+              uses "self" to access the variables of the instance in question. We'll look at the actual code used.
+            </p>
+             
+            <em>def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):<br>
+            self.title = movie_title<br>
+            self.storylne = movie_storyline<br>
+            self.poster_image_url = poster_image<br>
+            self.trailer_youtube_url = trailer_youtube</em><br><br>
+
+            In the entertainment_center file we can now create an instance of the movie class. Which looked like this.<br><br>
+
+            <em>import media<br>
+            toy_story = media.Movie(<br> all the specific info for the movie in corresponding order to how we did it in the definition of Movie class.)</em>
+
+            <p>
+              Then when we said <em>"print(toy_story.storyline)"</em> it would display the text we entered for that parameter. The lesson went onto create a Movie instance for Avatar.
+              This instance will have it's own unique storyline, trailer, etc. These variables in the class Movie, which are unique for each instance, are called instance variables. 
+            </p>
+
+            <p>
+
+              The next step is to play the trailer for the movie. We do this by defining a function in the Movie class <em>"show_trailer"</em> which takes self as its argument and then uses webbrowser
+              to open <em>"self.trailer_youtube_url"</em>. The show_trailer function is an example of an instance method, or a function in a class associated with an instance that takes self as it's first argument.
+            </p>
+
+            <p>
+
+              To finish this project we used someone else's program <em>fresh_tomatoes</em> to create the site. We import it into our code,
+              create a variable "movies" with a list of our Movie instances, and then run fresh_tomatoe's <em>"open_movies_page"</em> function to make a movie page
+              out of our data. Not too shabby.
+            </p>
+        
+        </div>
+    
+    </div>
+    
+    <div class="lesson">
+      
+      <h2>Session 12</h2>
+        
+        <div class="concept">
+          
+          <h3>More Object Oriented Programming</h3>
+            
+            <p>
+              In this lesson we explored some topics related to classes and objects. The
+              first new concept was class variables. Previously we have used instance variables, which were unique
+              to each new object of the Movie class. Class variables, however, are variables that all instances
+              share. The example here is the "valid_ratings" variable. 
+            </p>
+            <em>
+            "VALID_RATINGS" = ["G", "PG", "PG-13", "R"]"</em>
+            
+            <p>
+              This will allow each of our Movie instances to check their ratings against the list of valid ones, to 
+              make sure their rating is valid. A variable used in this fashion, is called a constant. This means 
+              the values are not likely to change anytime soon. Google's style guide suggests using all caps for variables 
+              with a constant value.
+            </p>
+            
+            <p>
+
+              Some class variables are predefined in python. This includes <em>__doc__</em> which allows us to read and write documentation for the class we're using,
+              <em>__name__</em>, which displays the name of the class, and <em>__module__</em> which displays the name of the module the class is defined in. 
+            </p>
+
+            <p>
+
+              This lesson introduced the new concept of inheritance. Well, not brand new. We first discussed the concept of inheritance when dealing
+              with CSS. There it meant that certain values were passed from elements higher on the tree structure to those nested within. So if we set the font for the body of an html
+              document, all the individual paragraphs in that body would use that font by default. Here it's a way to create parent and child classes that share instance variables. By entering the desired parent directory
+              in the normally empy () after our class name. This sets up the relationship between parent and child. We can access the parent information by calling the <em>"Parent.__init__"</em> function from 
+              within the child class definition. We concluded this lesson by learning about method overriding where we can change the implementation of a funcion inherited by a child class. We do this by redefining the function in the child class. Now when you call the function from the 
+              parent it will behave the way it always did, yet the child will use it's version of the function. 
+            </p>
+
+            <b>So that's object oriented programming in a nutshell. I had heard the term a million times yet never knew what it meant. Now I do. Not bad!</b>
+
+        </div>
+
+    </div>
+        
 </body>
 
 </html>
